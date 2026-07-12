@@ -1,0 +1,292 @@
+[
+  {
+    "plate_number": 2,
+    "filename": "plate_02.png",
+    "group": "confusion_line_validation",
+    "answer_key": {
+      "normal": "8",
+      "cvd": "3",
+      "type": "confusion"
+    },
+    "image_size": {
+      "width": 739,
+      "height": 730
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.070120"
+  },
+  {
+    "plate_number": 4,
+    "filename": "plate_04.png",
+    "group": "confusion_line_validation",
+    "answer_key": {
+      "normal": "29",
+      "cvd": "70",
+      "type": "confusion"
+    },
+    "image_size": {
+      "width": 770,
+      "height": 747
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.070521"
+  },
+  {
+    "plate_number": 6,
+    "filename": "plate_06.png",
+    "group": "confusion_line_validation",
+    "answer_key": {
+      "normal": "5",
+      "cvd": "2",
+      "type": "confusion"
+    },
+    "image_size": {
+      "width": 808,
+      "height": 732
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.070772"
+  },
+  {
+    "plate_number": 9,
+    "filename": "plate_09.png",
+    "group": "confusion_line_validation",
+    "answer_key": {
+      "normal": "74",
+      "cvd": "21",
+      "type": "confusion"
+    },
+    "image_size": {
+      "width": 905,
+      "height": 807
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.070986"
+  },
+  {
+    "plate_number": 10,
+    "filename": "plate_10.png",
+    "group": "unclassified",
+    "answer_key": {
+      "normal": "2",
+      "cvd": "none",
+      "type": "vanishing"
+    },
+    "image_size": {
+      "width": 891,
+      "height": 804
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.071187"
+  },
+  {
+    "plate_number": 12,
+    "filename": "plate_12.png",
+    "group": "unclassified",
+    "answer_key": {
+      "normal": "97",
+      "cvd": "none",
+      "type": "vanishing"
+    },
+    "image_size": {
+      "width": 902,
+      "height": 888
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.071387"
+  },
+  {
+    "plate_number": 15,
+    "filename": "plate_15.png",
+    "group": "unclassified",
+    "answer_key": {
+      "normal": "7",
+      "cvd": "none",
+      "type": "vanishing"
+    },
+    "image_size": {
+      "width": 817,
+      "height": 727
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.071583"
+  },
+  {
+    "plate_number": 20,
+    "filename": "plate_20.png",
+    "group": "unclassified",
+    "answer_key": {
+      "normal": "none",
+      "cvd": "45",
+      "type": "hidden"
+    },
+    "image_size": {
+      "width": 781,
+      "height": 713
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.071787"
+  },
+  {
+    "plate_number": 22,
+    "filename": "plate_22.png",
+    "group": "hue_mapping_reference",
+    "answer_key": {
+      "normal": "26",
+      "protan": "6",
+      "deutan": "2",
+      "type": "protan_deutan"
+    },
+    "image_size": {
+      "width": 774,
+      "height": 725
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.072044"
+  },
+  {
+    "plate_number": 23,
+    "filename": "plate_23.png",
+    "group": "hue_mapping_reference",
+    "answer_key": {
+      "normal": "42",
+      "protan": "2",
+      "deutan": "4",
+      "type": "protan_deutan"
+    },
+    "image_size": {
+      "width": 786,
+      "height": 740
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.072255"
+  },
+  {
+    "plate_number": 24,
+    "filename": "plate_24.png",
+    "group": "hue_mapping_reference",
+    "answer_key": {
+      "normal": "35",
+      "protan": "5",
+      "deutan": "3",
+      "type": "protan_deutan"
+    },
+    "image_size": {
+      "width": 774,
+      "height": 741
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.072430"
+  },
+  {
+    "plate_number": 26,
+    "filename": "plate_26.png",
+    "group": "hue_mapping_reference",
+    "answer_key": {
+      "normal": "purple+red",
+      "protan": "purple_only",
+      "deutan": "red_only",
+      "type": "line"
+    },
+    "image_size": {
+      "width": 790,
+      "height": 730
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.072599"
+  },
+  {
+    "plate_number": 27,
+    "filename": "plate_27.png",
+    "group": "hue_mapping_reference",
+    "answer_key": {
+      "normal": "purple+red",
+      "protan": "purple_only",
+      "deutan": "red_only",
+      "type": "line"
+    },
+    "image_size": {
+      "width": 807,
+      "height": 717
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.072775"
+  },
+  {
+    "plate_number": 28,
+    "filename": "plate_28.png",
+    "group": "unclassified",
+    "answer_key": {
+      "normal": "none",
+      "cvd": "line",
+      "type": "hidden_line"
+    },
+    "image_size": {
+      "width": 825,
+      "height": 761
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.072951"
+  },
+  {
+    "plate_number": 30,
+    "filename": "plate_30.png",
+    "group": "unclassified",
+    "answer_key": {
+      "normal": "blue_green_line",
+      "cvd": "none",
+      "type": "vanishing_line"
+    },
+    "image_size": {
+      "width": 831,
+      "height": 778
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.073124"
+  },
+  {
+    "plate_number": 31,
+    "filename": "plate_31.png",
+    "group": "unclassified",
+    "answer_key": {
+      "normal": "blue_green_line",
+      "cvd": "none",
+      "type": "vanishing_line"
+    },
+    "image_size": {
+      "width": 806,
+      "height": 748
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.073305"
+  },
+  {
+    "plate_number": 32,
+    "filename": "plate_32.png",
+    "group": "unclassified",
+    "answer_key": {
+      "normal": "orange_line",
+      "cvd": "none/false",
+      "type": "vanishing_line"
+    },
+    "image_size": {
+      "width": 810,
+      "height": 713
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.073492"
+  },
+  {
+    "plate_number": 34,
+    "filename": "plate_34.png",
+    "group": "confusion_line_validation",
+    "answer_key": {
+      "normal": "blue_green+yellow_green",
+      "cvd": "red_green+violet",
+      "type": "line_confusion"
+    },
+    "image_size": {
+      "width": 805,
+      "height": 775
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.073656"
+  },
+  {
+    "plate_number": 37,
+    "filename": "plate_37.png",
+    "group": "confusion_line_validation",
+    "answer_key": {
+      "normal": "violet+orange",
+      "cvd": "blue_green+violet",
+      "type": "line_confusion"
+    },
+    "image_size": {
+      "width": 806,
+      "height": 717
+    },
+    "extraction_timestamp": "2026-07-04T23:10:11.073821"
+  }
+]
