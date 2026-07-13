@@ -1,0 +1,116 @@
+[
+  {
+    "folder_name": "001apple",
+    "class_name": "apple",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "002orange",
+    "class_name": "orange",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "003pear",
+    "class_name": "pear",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "004tomato",
+    "class_name": "tomato",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "005strawberry",
+    "class_name": "strawberry",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "006banana",
+    "class_name": "banana",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "007watermelon",
+    "class_name": "watermelon",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "008kiwi",
+    "class_name": "kiwi",
+    "action": "exclude",
+    "exclude_reason": "warna ambigu / tidak relevan CVD"
+  },
+  {
+    "folder_name": "009peach",
+    "class_name": "peach",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "010pomegranate",
+    "class_name": "pomegranate",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "011pineapple",
+    "class_name": "pineapple",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "012starfruit",
+    "class_name": "starfruit",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "013grape",
+    "class_name": "grape",
+    "action": "exclude",
+    "exclude_reason": "warna ambigu / tidak relevan CVD"
+  },
+  {
+    "folder_name": "014lemon",
+    "class_name": "lemon",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "015pomelo",
+    "class_name": "pomelo",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "016mango",
+    "class_name": "mango",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "017durian",
+    "class_name": "durian",
+    "action": "exclude",
+    "exclude_reason": "warna ambigu / tidak relevan CVD"
+  },
+  {
+    "folder_name": "018hami",
+    "class_name": "hami",
+    "action": "keep",
+    "exclude_reason": ""
+  },
+  {
+    "folder_name": "019papaya",
+    "class_name": "papaya",
+    "action": "keep",
+    "exclude_reason": ""
+  }
+]

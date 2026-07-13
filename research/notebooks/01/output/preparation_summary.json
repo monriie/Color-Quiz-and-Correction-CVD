@@ -1,0 +1,172 @@
+{
+  "timestamp": "2026-07-05T10:33:29.006961",
+  "random_seed": 42,
+  "phash_threshold": 8,
+  "val_ratio": 0.15,
+  "val_min_per_class": 15,
+  "val_max_per_class": 30,
+  "excluded_classes": [
+    "000neg",
+    "008kiwi",
+    "013grape",
+    "017durian"
+  ],
+  "classes_kept": [
+    "001apple",
+    "002orange",
+    "003pear",
+    "004tomato",
+    "005strawberry",
+    "006banana",
+    "007watermelon",
+    "009peach",
+    "010pomegranate",
+    "011pineapple",
+    "012starfruit",
+    "014lemon",
+    "015pomelo",
+    "016mango",
+    "018hami",
+    "019papaya"
+  ],
+  "total_raw": 5475,
+  "total_after_dedup": 4232,
+  "total_removed_dedup": 498,
+  "split_totals": {
+    "train": 3249,
+    "val": 399,
+    "test": 584
+  },
+  "split_plan_per_class": [
+    {
+      "folder_name": "001apple",
+      "train_raw": 362,
+      "val_count": 30,
+      "new_train_count": 332,
+      "test_count": 41,
+      "val_ratio_actual": 0.083
+    },
+    {
+      "folder_name": "002orange",
+      "train_raw": 411,
+      "val_count": 30,
+      "new_train_count": 381,
+      "test_count": 47,
+      "val_ratio_actual": 0.073
+    },
+    {
+      "folder_name": "003pear",
+      "train_raw": 235,
+      "val_count": 30,
+      "new_train_count": 205,
+      "test_count": 43,
+      "val_ratio_actual": 0.128
+    },
+    {
+      "folder_name": "004tomato",
+      "train_raw": 387,
+      "val_count": 30,
+      "new_train_count": 357,
+      "test_count": 33,
+      "val_ratio_actual": 0.078
+    },
+    {
+      "folder_name": "005strawberry",
+      "train_raw": 415,
+      "val_count": 30,
+      "new_train_count": 385,
+      "test_count": 46,
+      "val_ratio_actual": 0.072
+    },
+    {
+      "folder_name": "006banana",
+      "train_raw": 328,
+      "val_count": 30,
+      "new_train_count": 298,
+      "test_count": 35,
+      "val_ratio_actual": 0.091
+    },
+    {
+      "folder_name": "007watermelon",
+      "train_raw": 211,
+      "val_count": 30,
+      "new_train_count": 181,
+      "test_count": 41,
+      "val_ratio_actual": 0.142
+    },
+    {
+      "folder_name": "009peach",
+      "train_raw": 272,
+      "val_count": 30,
+      "new_train_count": 242,
+      "test_count": 36,
+      "val_ratio_actual": 0.11
+    },
+    {
+      "folder_name": "010pomegranate",
+      "train_raw": 197,
+      "val_count": 29,
+      "new_train_count": 168,
+      "test_count": 13,
+      "val_ratio_actual": 0.147
+    },
+    {
+      "folder_name": "011pineapple",
+      "train_raw": 178,
+      "val_count": 26,
+      "new_train_count": 152,
+      "test_count": 37,
+      "val_ratio_actual": 0.146
+    },
+    {
+      "folder_name": "012starfruit",
+      "train_raw": 143,
+      "val_count": 21,
+      "new_train_count": 122,
+      "test_count": 40,
+      "val_ratio_actual": 0.147
+    },
+    {
+      "folder_name": "014lemon",
+      "train_raw": 129,
+      "val_count": 19,
+      "new_train_count": 110,
+      "test_count": 35,
+      "val_ratio_actual": 0.147
+    },
+    {
+      "folder_name": "015pomelo",
+      "train_raw": 104,
+      "val_count": 15,
+      "new_train_count": 89,
+      "test_count": 41,
+      "val_ratio_actual": 0.144
+    },
+    {
+      "folder_name": "016mango",
+      "train_raw": 133,
+      "val_count": 19,
+      "new_train_count": 114,
+      "test_count": 32,
+      "val_ratio_actual": 0.143
+    },
+    {
+      "folder_name": "018hami",
+      "train_raw": 88,
+      "val_count": 15,
+      "new_train_count": 73,
+      "test_count": 31,
+      "val_ratio_actual": 0.17
+    },
+    {
+      "folder_name": "019papaya",
+      "train_raw": 55,
+      "val_count": 15,
+      "new_train_count": 40,
+      "test_count": 33,
+      "val_ratio_actual": 0.273
+    }
+  ],
+  "output_dir": "C:\\Colorblind_correction\\research\\datasets\\processed\\fruit_split",
+  "exports_dir": "C:\\Colorblind_correction\\research\\notebooks\\01\\output"
+}
