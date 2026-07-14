@@ -1,0 +1,98 @@
+{
+  "001apple": {
+    "optimal_k": 2,
+    "elbow_k": 3,
+    "best_sil_k": 2,
+    "n_samples_used": 150
+  },
+  "002orange": {
+    "optimal_k": 3,
+    "elbow_k": 3,
+    "best_sil_k": 3,
+    "n_samples_used": 150
+  },
+  "003pear": {
+    "optimal_k": 3,
+    "elbow_k": 3,
+    "best_sil_k": 3,
+    "n_samples_used": 150
+  },
+  "004tomato": {
+    "optimal_k": 4,
+    "elbow_k": 4,
+    "best_sil_k": 2,
+    "n_samples_used": 150
+  },
+  "005strawberry": {
+    "optimal_k": 2,
+    "elbow_k": 3,
+    "best_sil_k": 2,
+    "n_samples_used": 150
+  },
+  "006banana": {
+    "optimal_k": 3,
+    "elbow_k": 3,
+    "best_sil_k": 3,
+    "n_samples_used": 150
+  },
+  "007watermelon": {
+    "optimal_k": 2,
+    "elbow_k": 3,
+    "best_sil_k": 2,
+    "n_samples_used": 150
+  },
+  "009peach": {
+    "optimal_k": 2,
+    "elbow_k": 3,
+    "best_sil_k": 2,
+    "n_samples_used": 150
+  },
+  "010pomegranate": {
+    "optimal_k": 2,
+    "elbow_k": 3,
+    "best_sil_k": 2,
+    "n_samples_used": 150
+  },
+  "011pineapple": {
+    "optimal_k": 3,
+    "elbow_k": 3,
+    "best_sil_k": 3,
+    "n_samples_used": 150
+  },
+  "012starfruit": {
+    "optimal_k": 3,
+    "elbow_k": 3,
+    "best_sil_k": 3,
+    "n_samples_used": 122
+  },
+  "014lemon": {
+    "optimal_k": 2,
+    "elbow_k": 3,
+    "best_sil_k": 2,
+    "n_samples_used": 110
+  },
+  "015pomelo": {
+    "optimal_k": 2,
+    "elbow_k": 3,
+    "best_sil_k": 2,
+    "n_samples_used": 89
+  },
+  "016mango": {
+    "optimal_k": 3,
+    "elbow_k": 3,
+    "best_sil_k": 3,
+    "n_samples_used": 114
+  },
+  "018hami": {
+    "optimal_k": 2,
+    "elbow_k": 3,
+    "best_sil_k": 2,
+    "n_samples_used": 73
+  },
+  "019papaya": {
+    "optimal_k": 3,
+    "elbow_k": 3,
+    "best_sil_k": 3,
+    "n_samples_used": 40
+  }
+}

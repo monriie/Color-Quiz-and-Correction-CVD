@@ -1,0 +1,279 @@
+{
+  "timestamp": "2026-07-05T10:47:53.774058",
+  "saturation_threshold": 0.2,
+  "dominance_threshold": 0.45,
+  "hue_boundary": {
+    "red_orange_max": 40,
+    "red_orange_min": 330,
+    "green_yellow_min": 50,
+    "green_yellow_max": 160
+  },
+  "train_distribution": {
+    "red_orange": 1734,
+    "green_yellow": 614,
+    "imbalance_ratio": 2.824
+  },
+  "per_class_hue": [
+    {
+      "folder_name": "001apple",
+      "class_name": "apple",
+      "red_orange": 323,
+      "green_yellow": 0,
+      "total_success": 323,
+      "dominant_hue": "red_orange"
+    },
+    {
+      "folder_name": "002orange",
+      "class_name": "orange",
+      "red_orange": 293,
+      "green_yellow": 0,
+      "total_success": 293,
+      "dominant_hue": "red_orange"
+    },
+    {
+      "folder_name": "003pear",
+      "class_name": "pear",
+      "red_orange": 2,
+      "green_yellow": 78,
+      "total_success": 80,
+      "dominant_hue": "green_yellow"
+    },
+    {
+      "folder_name": "004tomato",
+      "class_name": "tomato",
+      "red_orange": 250,
+      "green_yellow": 0,
+      "total_success": 250,
+      "dominant_hue": "red_orange"
+    },
+    {
+      "folder_name": "005strawberry",
+      "class_name": "strawberry",
+      "red_orange": 373,
+      "green_yellow": 0,
+      "total_success": 373,
+      "dominant_hue": "red_orange"
+    },
+    {
+      "folder_name": "006banana",
+      "class_name": "banana",
+      "red_orange": 3,
+      "green_yellow": 136,
+      "total_success": 139,
+      "dominant_hue": "green_yellow"
+    },
+    {
+      "folder_name": "007watermelon",
+      "class_name": "watermelon",
+      "red_orange": 0,
+      "green_yellow": 181,
+      "total_success": 181,
+      "dominant_hue": "green_yellow"
+    },
+    {
+      "folder_name": "009peach",
+      "class_name": "peach",
+      "red_orange": 223,
+      "green_yellow": 0,
+      "total_success": 223,
+      "dominant_hue": "red_orange"
+    },
+    {
+      "folder_name": "010pomegranate",
+      "class_name": "pomegranate",
+      "red_orange": 148,
+      "green_yellow": 2,
+      "total_success": 150,
+      "dominant_hue": "red_orange"
+    },
+    {
+      "folder_name": "011pineapple",
+      "class_name": "pineapple",
+      "red_orange": 40,
+      "green_yellow": 2,
+      "total_success": 42,
+      "dominant_hue": "red_orange"
+    },
+    {
+      "folder_name": "012starfruit",
+      "class_name": "starfruit",
+      "red_orange": 7,
+      "green_yellow": 72,
+      "total_success": 79,
+      "dominant_hue": "green_yellow"
+    },
+    {
+      "folder_name": "014lemon",
+      "class_name": "lemon",
+      "red_orange": 11,
+      "green_yellow": 26,
+      "total_success": 37,
+      "dominant_hue": "green_yellow"
+    },
+    {
+      "folder_name": "015pomelo",
+      "class_name": "pomelo",
+      "red_orange": 6,
+      "green_yellow": 49,
+      "total_success": 55,
+      "dominant_hue": "green_yellow"
+    },
+    {
+      "folder_name": "016mango",
+      "class_name": "mango",
+      "red_orange": 43,
+      "green_yellow": 4,
+      "total_success": 47,
+      "dominant_hue": "red_orange"
+    },
+    {
+      "folder_name": "018hami",
+      "class_name": "hami",
+      "red_orange": 0,
+      "green_yellow": 62,
+      "total_success": 62,
+      "dominant_hue": "green_yellow"
+    },
+    {
+      "folder_name": "019papaya",
+      "class_name": "papaya",
+      "red_orange": 12,
+      "green_yellow": 2,
+      "total_success": 14,
+      "dominant_hue": "red_orange"
+    }
+  ],
+  "rejection_summary": [
+    {
+      "folder_name": "001apple",
+      "total": 332,
+      "success": 323,
+      "failed": 9,
+      "rej_rate": 0.0271,
+      "top_reason": "hue_other"
+    },
+    {
+      "folder_name": "002orange",
+      "total": 381,
+      "success": 293,
+      "failed": 88,
+      "rej_rate": 0.231,
+      "top_reason": "hue_other"
+    },
+    {
+      "folder_name": "003pear",
+      "total": 205,
+      "success": 80,
+      "failed": 125,
+      "rej_rate": 0.6098,
+      "top_reason": "hue_other"
+    },
+    {
+      "folder_name": "004tomato",
+      "total": 357,
+      "success": 250,
+      "failed": 107,
+      "rej_rate": 0.2997,
+      "top_reason": "low_dominance"
+    },
+    {
+      "folder_name": "005strawberry",
+      "total": 385,
+      "success": 373,
+      "failed": 12,
+      "rej_rate": 0.0312,
+      "top_reason": "hue_other"
+    },
+    {
+      "folder_name": "006banana",
+      "total": 298,
+      "success": 139,
+      "failed": 159,
+      "rej_rate": 0.5336,
+      "top_reason": "hue_other"
+    },
+    {
+      "folder_name": "007watermelon",
+      "total": 181,
+      "success": 181,
+      "failed": 0,
+      "rej_rate": 0.0,
+      "top_reason": ""
+    },
+    {
+      "folder_name": "009peach",
+      "total": 242,
+      "success": 223,
+      "failed": 19,
+      "rej_rate": 0.0785,
+      "top_reason": "hue_other"
+    },
+    {
+      "folder_name": "010pomegranate",
+      "total": 168,
+      "success": 150,
+      "failed": 18,
+      "rej_rate": 0.1071,
+      "top_reason": "hue_other"
+    },
+    {
+      "folder_name": "011pineapple",
+      "total": 152,
+      "success": 42,
+      "failed": 110,
+      "rej_rate": 0.7237,
+      "top_reason": "low_dominance"
+    },
+    {
+      "folder_name": "012starfruit",
+      "total": 122,
+      "success": 79,
+      "failed": 43,
+      "rej_rate": 0.3525,
+      "top_reason": "low_dominance"
+    },
+    {
+      "folder_name": "014lemon",
+      "total": 110,
+      "success": 37,
+      "failed": 73,
+      "rej_rate": 0.6636,
+      "top_reason": "hue_other"
+    },
+    {
+      "folder_name": "015pomelo",
+      "total": 89,
+      "success": 55,
+      "failed": 34,
+      "rej_rate": 0.382,
+      "top_reason": "hue_other"
+    },
+    {
+      "folder_name": "016mango",
+      "total": 114,
+      "success": 47,
+      "failed": 67,
+      "rej_rate": 0.5877,
+      "top_reason": "hue_other"
+    },
+    {
+      "folder_name": "018hami",
+      "total": 73,
+      "success": 62,
+      "failed": 11,
+      "rej_rate": 0.1507,
+      "top_reason": "hue_other"
+    },
+    {
+      "folder_name": "019papaya",
+      "total": 40,
+      "success": 14,
+      "failed": 26,
+      "rej_rate": 0.65,
+      "top_reason": "low_dominance"
+    }
+  ],
+  "overall_rejection_rate": 0.2773,
+  "undersampling_applied": true,
+  "cap_target": 614
+}
