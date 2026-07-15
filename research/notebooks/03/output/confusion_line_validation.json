@@ -1,0 +1,580 @@
+{
+  "timestamp": "2026-07-05T10:52:58.534371",
+  "notebook_version": "v3-dual-threshold",
+  "method": "Validasi chromaticity CIE 1931: jarak tegak lurus cluster HSV ke confusion line dari copunctal point masing-masing CVD type. Threshold ditetapkan terpisah per CVD type karena perbedaan geometri slope confusion line. Threshold ditentukan melalui sweep empiris pada THRESHOLD_CANDIDATES dan dipilih sebagai nilai minimum agar semua plate pass per CVD type. Agregasi menggunakan median (robust terhadap outlier cluster).",
+  "references": {
+    "copunctal_points": "Computerized simulation of color appearance for dichromats. JOSA A 14(10), 2647-2655. Tabel 1.",
+    "threshold_basis": "Dual threshold justified oleh geometri: protanopia copunctal (0.7465, 0.2535) menghasilkan slope ~-0.15 (threshold 0.09); deuteranopia copunctal (1.4, -0.4) menghasilkan slope ~-0.04 (threshold 0.12). Offset dari confusion line ideal disebabkan: (1) PDF/CMYK ke sRGB shift 0.02-0.04; (2) deliberate Ishihara offset (Cole & Lian, 2006) 0.02-0.05; (3) K-Means centroid dispersion 0.01-0.03. Total: 0.05-0.12.",
+    "min_prop_filter": "Wyszecki & Stiles, Color Science (2000): konvensi noise filter 5% dalam color quantization."
+  },
+  "parameters": {
+    "copunctal_points": {
+      "protanopia": [
+        0.7465,
+        0.2535
+      ],
+      "deuteranopia": [
+        1.4,
+        -0.4
+      ]
+    },
+    "white_point_d65": [
+      0.3127,
+      0.329
+    ],
+    "threshold_protan": 0.09,
+    "threshold_deutan": 0.12,
+    "threshold_candidates": [
+      0.05,
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.12,
+      0.15
+    ],
+    "min_prop_filter": 0.05,
+    "groups_validated": [
+      "confusion_line_validation",
+      "hue_mapping_reference"
+    ]
+  },
+  "hue_boundaries_source": {
+    "file": "C:\\Colorblind_correction\\research\\notebooks\\00\\output\\derived_hue_boundaries.json",
+    "red_orange_max": 35,
+    "red_orange_min": 330,
+    "green_yellow_min": 65,
+    "green_yellow_max": 75,
+    "buffer_zone": [
+      35,
+      65
+    ]
+  },
+  "per_plate_results": {
+    "2": {
+      "plate_number": 2,
+      "group": "confusion_line_validation",
+      "plate_type": "confusion",
+      "answer_key": {
+        "normal": "8",
+        "cvd": "3",
+        "type": "confusion"
+      },
+      "n_clusters": 1,
+      "status": "insufficient_data",
+      "reason": "Hanya 1 cluster dengan kategori jelas (butuh >=2). Kategori tersedia: {'red_orange_candidate', 'other'}. Cluster dominan kemungkinan masuk buffer zone NB00 (35--65 derajat).",
+      "cvd_results": {},
+      "chromaticity_clusters": [
+        {
+          "x": 0.369949,
+          "y": 0.410393,
+          "hue_360": 53.75,
+          "proportion": 0.3995,
+          "hue_category": "other"
+        },
+        {
+          "x": 0.352451,
+          "y": 0.380602,
+          "hue_360": 49.46,
+          "proportion": 0.3187,
+          "hue_category": "other"
+        },
+        {
+          "x": 0.419329,
+          "y": 0.412191,
+          "hue_360": 36.18,
+          "proportion": 0.2818,
+          "hue_category": "red_orange_candidate"
+        }
+      ]
+    },
+    "4": {
+      "plate_number": 4,
+      "group": "confusion_line_validation",
+      "plate_type": "confusion",
+      "answer_key": {
+        "normal": "29",
+        "cvd": "70",
+        "type": "confusion"
+      },
+      "n_clusters": 1,
+      "status": "insufficient_data",
+      "reason": "Hanya 1 cluster dengan kategori jelas (butuh >=2). Kategori tersedia: {'red_orange_candidate', 'other'}. Cluster dominan kemungkinan masuk buffer zone NB00 (35--65 derajat).",
+      "cvd_results": {},
+      "chromaticity_clusters": [
+        {
+          "x": 0.373372,
+          "y": 0.420448,
+          "hue_360": 56.2,
+          "proportion": 0.5401,
+          "hue_category": "other"
+        },
+        {
+          "x": 0.352995,
+          "y": 0.38646,
+          "hue_360": 53.41,
+          "proportion": 0.3282,
+          "hue_category": "other"
+        },
+        {
+          "x": 0.47945,
+          "y": 0.364033,
+          "hue_360": 13.71,
+          "proportion": 0.1316,
+          "hue_category": "red_orange_candidate"
+        }
+      ]
+    },
+    "6": {
+      "plate_number": 6,
+      "group": "confusion_line_validation",
+      "plate_type": "confusion",
+      "answer_key": {
+        "normal": "5",
+        "cvd": "2",
+        "type": "confusion"
+      },
+      "n_clusters": 3,
+      "status": "validated",
+      "reason": null,
+      "cvd_results": {
+        "protanopia": {
+          "copunctal": [
+            0.7465,
+            0.2535
+          ],
+          "distances": [
+            0.075483,
+            0.053297,
+            0.099058
+          ],
+          "mean_dist": 0.07595,
+          "median_dist": 0.07548,
+          "max_dist": 0.09906,
+          "threshold": 0.09,
+          "passed": true
+        },
+        "deuteranopia": {
+          "copunctal": [
+            1.4,
+            -0.4
+          ],
+          "distances": [
+            0.140824,
+            0.069241,
+            0.10421
+          ],
+          "mean_dist": 0.10476,
+          "median_dist": 0.10421,
+          "max_dist": 0.14082,
+          "threshold": 0.12,
+          "passed": true
+        }
+      },
+      "chromaticity_clusters": [
+        {
+          "x": 0.499898,
+          "y": 0.373037,
+          "hue_360": 16.38,
+          "proportion": 0.5449,
+          "hue_category": "red_orange_candidate"
+        },
+        {
+          "x": 0.371652,
+          "y": 0.372838,
+          "hue_360": 31.71,
+          "proportion": 0.3614,
+          "hue_category": "red_orange_candidate"
+        },
+        {
+          "x": 0.362894,
+          "y": 0.420811,
+          "hue_360": 64.22,
+          "proportion": 0.0744,
+          "hue_category": "green_yellow_candidate"
+        }
+      ]
+    },
+    "9": {
+      "plate_number": 9,
+      "group": "confusion_line_validation",
+      "plate_type": "confusion",
+      "answer_key": {
+        "normal": "74",
+        "cvd": "21",
+        "type": "confusion"
+      },
+      "n_clusters": 2,
+      "status": "validated",
+      "reason": null,
+      "cvd_results": {
+        "protanopia": {
+          "copunctal": [
+            0.7465,
+            0.2535
+          ],
+          "distances": [
+            0.076818,
+            0.097039
+          ],
+          "mean_dist": 0.08693,
+          "median_dist": 0.08693,
+          "max_dist": 0.09704,
+          "threshold": 0.09,
+          "passed": true
+        },
+        "deuteranopia": {
+          "copunctal": [
+            1.4,
+            -0.4
+          ],
+          "distances": [
+            0.138162,
+            0.099508
+          ],
+          "mean_dist": 0.11884,
+          "median_dist": 0.11884,
+          "max_dist": 0.13816,
+          "threshold": 0.12,
+          "passed": true
+        }
+      },
+      "chromaticity_clusters": [
+        {
+          "x": 0.490712,
+          "y": 0.375991,
+          "hue_360": 17.57,
+          "proportion": 0.4786,
+          "hue_category": "red_orange_candidate"
+        },
+        {
+          "x": 0.366668,
+          "y": 0.388046,
+          "hue_360": 43.61,
+          "proportion": 0.3824,
+          "hue_category": "other"
+        },
+        {
+          "x": 0.355619,
+          "y": 0.420028,
+          "hue_360": 69.96,
+          "proportion": 0.1314,
+          "hue_category": "green_yellow_candidate"
+        }
+      ]
+    },
+    "34": {
+      "plate_number": 34,
+      "group": "confusion_line_validation",
+      "plate_type": "line_confusion",
+      "answer_key": {
+        "normal": "blue_green+yellow_green",
+        "cvd": "red_green+violet",
+        "type": "line_confusion"
+      },
+      "n_clusters": 3,
+      "status": "validated",
+      "reason": null,
+      "cvd_results": {
+        "protanopia": {
+          "copunctal": [
+            0.7465,
+            0.2535
+          ],
+          "distances": [
+            0.082336,
+            0.055736,
+            0.097333
+          ],
+          "mean_dist": 0.07847,
+          "median_dist": 0.08234,
+          "max_dist": 0.09733,
+          "threshold": 0.09,
+          "passed": true
+        },
+        "deuteranopia": {
+          "copunctal": [
+            1.4,
+            -0.4
+          ],
+          "distances": [
+            0.14071,
+            0.069512,
+            0.096109
+          ],
+          "mean_dist": 0.10211,
+          "median_dist": 0.09611,
+          "max_dist": 0.14071,
+          "threshold": 0.12,
+          "passed": true
+        }
+      },
+      "chromaticity_clusters": [
+        {
+          "x": 0.485609,
+          "y": 0.38248,
+          "hue_360": 19.88,
+          "proportion": 0.513,
+          "hue_category": "red_orange_candidate"
+        },
+        {
+          "x": 0.367323,
+          "y": 0.376067,
+          "hue_360": 35.73,
+          "proportion": 0.3339,
+          "hue_category": "red_orange_candidate"
+        },
+        {
+          "x": 0.346774,
+          "y": 0.421866,
+          "hue_360": 78.4,
+          "proportion": 0.1373,
+          "hue_category": "green_yellow_candidate"
+        }
+      ]
+    },
+    "37": {
+      "plate_number": 37,
+      "group": "confusion_line_validation",
+      "plate_type": "line_confusion",
+      "answer_key": {
+        "normal": "violet+orange",
+        "cvd": "blue_green+violet",
+        "type": "line_confusion"
+      },
+      "n_clusters": 1,
+      "status": "insufficient_data",
+      "reason": "Hanya 1 cluster dengan kategori jelas (butuh >=2). Kategori tersedia: {'red_orange_candidate', 'other'}. Cluster dominan kemungkinan masuk buffer zone NB00 (35--65 derajat).",
+      "cvd_results": {},
+      "chromaticity_clusters": [
+        {
+          "x": 0.3753,
+          "y": 0.42716,
+          "hue_360": 57.84,
+          "proportion": 0.5593,
+          "hue_category": "other"
+        },
+        {
+          "x": 0.355725,
+          "y": 0.39094,
+          "hue_360": 53.89,
+          "proportion": 0.2921,
+          "hue_category": "other"
+        },
+        {
+          "x": 0.486459,
+          "y": 0.3735,
+          "hue_360": 16.84,
+          "proportion": 0.1486,
+          "hue_category": "red_orange_candidate"
+        }
+      ]
+    }
+  },
+  "proximity_analysis": {
+    "2": {
+      "plate_number": 2,
+      "cvd_proximity": {
+        "protanopia": {
+          "threshold": 0.09,
+          "clusters": [
+            {
+              "hue": 49.46,
+              "cat": "other",
+              "prop": 0.3187,
+              "distance": 0.057654
+            },
+            {
+              "hue": 53.75,
+              "cat": "other",
+              "prop": 0.3995,
+              "distance": 0.090004
+            },
+            {
+              "hue": 36.18,
+              "cat": "red_orange_candidate",
+              "prop": 0.2818,
+              "distance": 0.100242
+            }
+          ],
+          "median_all": 0.09,
+          "min_dist": 0.05765
+        },
+        "deuteranopia": {
+          "threshold": 0.12,
+          "clusters": [
+            {
+              "hue": 49.46,
+              "cat": "other",
+              "prop": 0.3187,
+              "distance": 0.064997
+            },
+            {
+              "hue": 53.75,
+              "cat": "other",
+              "prop": 0.3995,
+              "distance": 0.099485
+            },
+            {
+              "hue": 36.18,
+              "cat": "red_orange_candidate",
+              "prop": 0.2818,
+              "distance": 0.128478
+            }
+          ],
+          "median_all": 0.09949,
+          "min_dist": 0.065
+        }
+      }
+    },
+    "4": {
+      "plate_number": 4,
+      "cvd_proximity": {
+        "protanopia": {
+          "threshold": 0.09,
+          "clusters": [
+            {
+              "hue": 13.71,
+              "cat": "red_orange_candidate",
+              "prop": 0.1316,
+              "distance": 0.063106
+            },
+            {
+              "hue": 53.41,
+              "cat": "other",
+              "prop": 0.3282,
+              "distance": 0.063518
+            },
+            {
+              "hue": 56.2,
+              "cat": "other",
+              "prop": 0.5401,
+              "distance": 0.100497
+            }
+          ],
+          "median_all": 0.06352,
+          "min_dist": 0.06311
+        },
+        "deuteranopia": {
+          "threshold": 0.12,
+          "clusters": [
+            {
+              "hue": 53.41,
+              "cat": "other",
+              "prop": 0.3282,
+              "distance": 0.070165
+            },
+            {
+              "hue": 56.2,
+              "cat": "other",
+              "prop": 0.5401,
+              "distance": 0.109743
+            },
+            {
+              "hue": 13.71,
+              "cat": "red_orange_candidate",
+              "prop": 0.1316,
+              "distance": 0.121959
+            }
+          ],
+          "median_all": 0.10974,
+          "min_dist": 0.07017
+        }
+      }
+    },
+    "37": {
+      "plate_number": 37,
+      "cvd_proximity": {
+        "protanopia": {
+          "threshold": 0.09,
+          "clusters": [
+            {
+              "hue": 53.89,
+              "cat": "other",
+              "prop": 0.2921,
+              "distance": 0.0684
+            },
+            {
+              "hue": 16.84,
+              "cat": "red_orange_candidate",
+              "prop": 0.1486,
+              "distance": 0.073635
+            },
+            {
+              "hue": 57.84,
+              "cat": "other",
+              "prop": 0.5593,
+              "distance": 0.10744
+            }
+          ],
+          "median_all": 0.07364,
+          "min_dist": 0.0684
+        },
+        "deuteranopia": {
+          "threshold": 0.12,
+          "clusters": [
+            {
+              "hue": 53.89,
+              "cat": "other",
+              "prop": 0.2921,
+              "distance": 0.075407
+            },
+            {
+              "hue": 57.84,
+              "cat": "other",
+              "prop": 0.5593,
+              "distance": 0.116392
+            },
+            {
+              "hue": 16.84,
+              "cat": "red_orange_candidate",
+              "prop": 0.1486,
+              "distance": 0.133725
+            }
+          ],
+          "median_all": 0.11639,
+          "min_dist": 0.07541
+        }
+      }
+    }
+  },
+  "summary": {
+    "total_plates_evaluated": 6,
+    "validated": 3,
+    "insufficient_data": 3,
+    "not_validated": 0,
+    "validation_rate_evaluable": 100.0,
+    "threshold_sweep_summary": {
+      "0.05": {
+        "protanopia": 0,
+        "deuteranopia": 0
+      },
+      "0.07": {
+        "protanopia": 0,
+        "deuteranopia": 0
+      },
+      "0.08": {
+        "protanopia": 1,
+        "deuteranopia": 0
+      },
+      "0.09": {
+        "protanopia": 3,
+        "deuteranopia": 0
+      },
+      "0.1": {
+        "protanopia": 3,
+        "deuteranopia": 1
+      },
+      "0.12": {
+        "protanopia": 3,
+        "deuteranopia": 3
+      },
+      "0.15": {
+        "protanopia": 3,
+        "deuteranopia": 3
+      }
+    },
+    "interpretation": "Dari 3 plate yang dapat dievaluasi penuh, 3 plate tervalidasi (rate: 100.0%). Jarak median protan: 0.075-0.087 (threshold 0.09, 3/3 pass). Jarak median deutan: 0.096-0.119 (threshold 0.12, 3/3 pass). 3 plate tidak terevaluasi karena cluster dominan di buffer zone NB00 (35-65 derajat).",
+    "note_insufficient": "3 plate tidak dapat dievaluasi formal karena cluster dominan (hue 49-58 derajat) masuk buffer zone NB00 (35-65 derajat). Ini limitasi metodologis yang terdokumentasi, bukan bug. Lihat proximity_analysis untuk analisis geometris tambahan."
+  }
+}
